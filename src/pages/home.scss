@@ -1,15 +1,36 @@
 .home {
-  .wrapper-home{
+  .wrapper-home {
     display: flex;
     overflow-y: hidden; /* Hide vertical scrollbar */
     overflow-x: hidden; /* Hide horizontal scrollbar */
+
+    .span-box{
+      // float: right;
+      margin-left: 90%;
+      position: fixed;
+      display: none;
+      .span-icon{
+        font-size: 56px;
+        color: black;
+      }
+      @media screen and (max-width: 1200px) {
+        display: block;
+      }
+
+    }
     .navbar-home {
-        // flex: 1;
-        // width: 300px;
+      @media screen and (max-width: 1200px) {
+        display: none;
+      }
+    }
+    .navbar-home.show {
+      display: block;
     }
     .container-home {
-        // flex: 4;
-        margin-left: 20%;
+      margin-left: 20%;
+      @media screen and (max-width: 1200px) {
+        margin-left: 0;
+      }
     }
   }
 }

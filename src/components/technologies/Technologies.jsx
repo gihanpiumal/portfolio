@@ -43,7 +43,7 @@ const Technologies = () => {
             columns={{ xs: 4, sm: 8, md: 12 }}
           >
             {temp_technologies.map((val, index) => (
-              <Grid className="grids-technologiies" xs={2} sm={4} md={4} key={index}>
+              <Grid className="grids-technologiies" xs={4} sm={4} md={4} key={index}>
                 <Tech title={val.title} descripttion={val.desc} />
               </Grid>
             ))}

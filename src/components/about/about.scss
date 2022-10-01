@@ -17,9 +17,11 @@
     }
     .middle-about {
       display: flex;
-      //   flex-direction: column;
       justify-content: center;
-      //   align-items: center;
+
+      @media screen and (max-width: 1000px) {
+        flex-direction: column;
+      }
       .dp-about {
         margin-top: 20px;
         img {
@@ -43,6 +45,10 @@
         .bio-about {
           display: flex;
           margin-top: 40px;
+
+          @media screen and (max-width: 600px) {
+            flex-direction: column;
+          }
           .left-about {
             margin-left: 50px;
             margin-right: 100px;
@@ -58,6 +64,10 @@
             }
           }
           .right-about {
+
+            @media screen and (max-width: 600px) {
+              margin-left: 50px;
+            }
             li {
               display: flex;
               align-items: center;
@@ -94,10 +104,14 @@
         margin-top: 20px;
         display: flex;
         margin-left: 100px;
-        li{
+
+        @media screen and (max-width: 600px) {
+          flex-direction: column;
+        }
+        li {
           font-size: 20px;
           font-weight: bold;
-          color: #31087B;
+          color: #31087b;
         }
         .left-skils-about {
           flex: 1;
