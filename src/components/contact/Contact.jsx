@@ -10,7 +10,7 @@ import "./contact.scss";
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <div className="wrapper-contact">
         <div className="title-contact">Contact</div>
         <div className="description-contact">

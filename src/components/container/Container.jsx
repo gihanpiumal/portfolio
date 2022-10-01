@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import {
   Home,
@@ -11,6 +13,9 @@ import {
 import "./container.scss";
 
 const Container = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <div className="container">
       <div className="wrapper-container">
@@ -20,7 +25,7 @@ const Container = () => {
         <div className="about-container">
           <About />
         </div>
-        <div className="portfolio-container">
+        <div className="portfolio-container" >
           <Portfolio />
         </div>
         <div className="technologies-container">

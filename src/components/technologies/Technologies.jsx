@@ -26,7 +26,7 @@ const Technologies = () => {
     },
   ];
   return (
-    <div className="technologies">
+    <div className="technologies" id="technologies">
       <div className="wrapper-technologiies">
         <div className="title-technologies">Technologies</div>
         <div className="description-technologies">

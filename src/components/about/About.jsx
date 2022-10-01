@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import "./about.scss";
 
 const About = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
-    <div className="about">
+    <div className="about" id="about">
       <div className="wrapper-about">
         <div className="top-about">
           <div className="title-about">About</div>
@@ -19,10 +24,10 @@ const About = () => {
           </div>
         </div>
         <div className="middle-about">
-          <div className="dp-about">
+          <div className="dp-about" data-aos="fade-right">
             <img src={require("../../images/dp.jpeg")} alt="img" />
           </div>
-          <div className="middle-data-about">
+          <div className="middle-data-about" data-aos="fade-left">
             <div className="dp-title-about">Full Stack Web Developer</div>
             <div className="dp-description-about">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
@@ -89,19 +94,19 @@ const About = () => {
             iure blanditiis nihil laboriosam?
           </div>
           <div className="skilles-list-about">
-            <ul className="left-skils-about">
+            <ul className="left-skils-about"  data-aos="fade-right">
               <li>HTML</li>
               <li>CSS</li>
               <li>JAVASCRIPT</li>
               <li>PHP</li>
             </ul>
-            <ul className="middle-skils-about">
+            <ul className="middle-skils-about"   data-aos="fade-up">
               <li>PHTHON</li>
               <li>REACTJS</li>
               <li>NODEJS</li>
               <li>MONGODB</li>
             </ul>
-            <ul className="right-skils-about">
+            <ul className="right-skils-about"   data-aos="fade-left">
               <li>PHTHON</li>
               <li>REACTJS</li>
               <li>NODEJS</li>

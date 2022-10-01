@@ -40,10 +40,10 @@ const Portfoio = () => {
     },
   ];
   return (
-    <div className="portfolio">
+    <div className="portfolio" id="projects">
       <div className="wrapper-portfolio">
         <div className="title-portfolio">Projects</div>
-        <div className="body-portfolio">
+        <div className="body-portfolio" >
           <Grid
             className="grid"
             container
