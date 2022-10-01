@@ -1,21 +1,20 @@
 import React from "react";
 
-import "./home.scss";
+import "./header.scss";
 
 const Home = () => {
   return (
-    <div className="home">
-      <div className="wrapper">
-        <div className="image"></div>
+    <div className="header">
+      <div className="wrapper-header">
         <div
-          className="title"
+          className="title-header"
           style={{
             background: (
               <img src={require("../../images/hero-bg.jpg")} alt="hero image" />
             ),
           }}
         >
-          <div className="topic">Gihan Piumal</div> 
+          <div className="topic-header">Gihan Piumal</div> 
         </div>
       </div>
     </div>

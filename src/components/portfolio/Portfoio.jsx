@@ -42,7 +42,7 @@ const Portfoio = () => {
   return (
     <div className="portfolio">
       <div className="wrapper-portfolio">
-        <div className="title-project">Projects</div>
+        <div className="title-portfolio">Projects</div>
         <div className="body-portfolio">
           <Grid
             className="grid"

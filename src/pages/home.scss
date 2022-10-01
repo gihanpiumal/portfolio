@@ -1,20 +1,15 @@
 .home {
-  .wrapper {
+  .wrapper-home{
     display: flex;
-    justify-content: center;
-    overflow-y: auto;
-    .navbar {
-        flex: 2;
-        // width: 100%;
-        // transition: all ease-in-out 0.5s;
-        // z-index: 9997;
-        // transition: all 0.5s;s
-        // overflow-y: auto;
-        width: 300px;
+    // justify-content: center;
+    // overflow-y: auto;
+    .navbar-home {
+        // flex: 1;
+        // width: 300px;
     }
-    .container {
-        flex: 8;
-        margin-left: 150px;
+    .container-home {
+        // flex: 4;
+        margin-left: 20%;
     }
   }
 }

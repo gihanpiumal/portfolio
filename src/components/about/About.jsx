@@ -5,10 +5,10 @@ import "./about.scss";
 const About = () => {
   return (
     <div className="about">
-      <div className="wrapper">
-        <div className="top">
+      <div className="wrapper-about">
+        <div className="top-about">
           <div className="title-about">About</div>
-          <div className="description">
+          <div className="description-about">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. In
             architecto excepturi neque temporibus iure ab eos exercitationem
             explicabo, vero asperiores ad facilis inventore eum? Perferendis
@@ -18,20 +18,20 @@ const About = () => {
             aliquid voluptas impedit vero quos nulla quae?
           </div>
         </div>
-        <div className="middle">
-          <div className="dp">
+        <div className="middle-about">
+          <div className="dp-about">
             <img src={require("../../images/dp.jpeg")} alt="img" />
           </div>
-          <div className="middle-data">
-            <div className="dp-title">Full Stack Web Developer</div>
-            <div className="dp-description">
+          <div className="middle-data-about">
+            <div className="dp-title-about">Full Stack Web Developer</div>
+            <div className="dp-description-about">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
               ullam itaque soluta impedit explicabo, mollitia aliquam
               repellendus quod excepturi eos esse, modi sunt voluptatum
               pariatur. Quod impedit officiis suscipit mollitia.
             </div>
-            <div className="bio">
-              <ul className="left">
+            <div className="bio-about">
+              <ul className="left-about">
                 <li>
                   <div className="topic">Birthday :</div>
                   <div className="value">4 November 1995</div>
@@ -49,7 +49,7 @@ const About = () => {
                   <div className="value">Panadura, Sri Lanka</div>
                 </li>
               </ul>
-              <ul className="right">
+              <ul className="right-about">
                 <li>
                   <div className="topic">Age :</div>
                   <div className="value">27</div>
@@ -68,7 +68,7 @@ const About = () => {
                 </li>
               </ul>
             </div>
-            <div className="bottom-description">
+            <div className="bottom-description-about">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
               ab ipsam maxime aliquam hic suscipit, at voluptatem ipsa
               distinctio commodi neque accusamus, quia, error aperiam amet
@@ -80,28 +80,28 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="bottom">
-          <div className="bottom-title">Skills</div>
-          <div className="bottom-des">
+        <div className="bottom-about">
+          <div className="bottom-title-about">Skills</div>
+          <div className="bottom-des-about">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
             voluptatem eveniet exercitationem iste quis ducimus suscipit iure.
             Corporis quibusdam magnam iste laboriosam dolore a. Totam accusamus
             iure blanditiis nihil laboriosam?
           </div>
-          <div className="skilles-list">
-            <ul className="left-skils">
+          <div className="skilles-list-about">
+            <ul className="left-skils-about">
               <li>HTML</li>
               <li>CSS</li>
               <li>JAVASCRIPT</li>
               <li>PHP</li>
             </ul>
-            <ul className="middle-skils">
+            <ul className="middle-skils-about">
               <li>PHTHON</li>
               <li>REACTJS</li>
               <li>NODEJS</li>
               <li>MONGODB</li>
             </ul>
-            <ul className="right-skils">
+            <ul className="right-skils-about">
               <li>PHTHON</li>
               <li>REACTJS</li>
               <li>NODEJS</li>

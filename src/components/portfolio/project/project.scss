@@ -3,17 +3,17 @@
     height: 300px;
     background-color: #fff;
     border-radius: 10px;
-  .wrapper {
+  .wrapper-project {
     display: flex;
     flex-direction: column;
     align-items: center;
-    .project-title {
+    .title-project {
         margin-top: 10px;
         color: rgb(0, 0, 0);
         font-size: 18px;
         font-weight: bold;
     }
-    .project-img {
+    .img-project {
         margin-top: 10px;
         img{
             width: 300px;
@@ -21,23 +21,23 @@
 
         }
     }
-    .project-subtitle {
+    .subtitle-project {
         text-align: center;
         color: rgb(0, 0, 0);
         font-style: 15px;
         font-weight: 100;
     }
-    .project-btn {
+    .btn-project {
         display: flex;
-      .view-btn {
+      .view-btn-project {
         margin-right: 250px;
-        .icon{
+        .icon-project{
           color: rgb(0, 0, 0);
             cursor: pointer;
         }
       }
-      .view-github {
-        .icon{
+      .view-github-project {
+        .icon-project{
           color: rgb(0, 0, 0);
             cursor: pointer;
             font-size: 28px;

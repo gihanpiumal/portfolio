@@ -13,20 +13,20 @@ import "./container.scss";
 const Container = () => {
   return (
     <div className="container">
-      <div className="wrapper">
-        <div className="home">
+      <div className="wrapper-container">
+        <div className="home-container">
           <Home />
         </div>
-        <div className="about">
+        <div className="about-container">
           <About />
         </div>
-        <div className="portfolio">
+        <div className="portfolio-container">
           <Portfolio />
         </div>
-        <div className="technologies">
+        <div className="technologies-container">
           <Technologies />
         </div>
-        <div className="contact">
+        <div className="contact-container">
           <Contact />
         </div>
       </div>

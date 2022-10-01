@@ -16,52 +16,52 @@ import "./navbar.scss";
 const NavBar = () => {
   return (
     <div className="navbar">
-      <div className="wrapper">
-        <div className="top">
-          <div className="avatar">
+      <div className="wrapper-nav">
+        <div className="top-nav">
+          <div className="avatar-nav">
             <img src={require("../../images/dp.jpeg")} alt="dp" />
           </div>
-          <div className="name">Gihan Piumal</div>
-          <div className="social-icons">
-            <ul className="icons">
+          <div className="name-nav">Gihan Piumal</div>
+          <div className="social-icons-nav">
+            <ul className="icons-nav">
               <li>
-                <TwitterIcon className="icon" />
+                <TwitterIcon className="icon-nav" />
               </li>
               <li>
-                <FacebookIcon className="icon" />
+                <FacebookIcon className="icon-nav" />
               </li>
               <li>
                 <a href="https://github.com/gihanpiumal" target="_blank">
-                <GitHubIcon className="icon">
+                <GitHubIcon className="icon-nav">
                   {/* <a href="https://github.com/gihanpiumal" target="_blank"></a> */}
                 </GitHubIcon></a>
               </li>
               <li>
-                <LinkedInIcon className="icon" />
+                <LinkedInIcon className="icon-nav" />
               </li>
             </ul>
           </div>
         </div>
-        <div className="bottom">
-          <ul className="navlinks">
+        <div className="bottom-nav">
+          <ul className="navlinks-nav">
             <li>
-              <HomeIcon className="icon" />
+              <HomeIcon className="icon-nav" />
               <span>Home</span>
             </li>
             <li>
-              <PersonIcon className="icon" />
+              <PersonIcon className="icon-nav" />
               <span>About</span>
             </li>
             <li>
-              <AssignmentIcon className="icon" />
+              <AssignmentIcon className="icon-nav" />
               <span>Projects</span>
             </li>
             <li>
-              <MiscellaneousServicesIcon className="icon" />
+              <MiscellaneousServicesIcon className="icon-nav" />
               <span>Technologies</span>
             </li>
             <li>
-              <MailIcon className="icon" />
+              <MailIcon className="icon-nav" />
               <span>Contact</span>
             </li>
           </ul>

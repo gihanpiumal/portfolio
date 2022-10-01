@@ -8,18 +8,18 @@ import "./project.scss";
 const Project = ({ title, image, subTitle }) => {
   return (
     <div className="project">
-      <div className="wrapper">
-        <div className="project-title">{title}</div>
-        <div className="project-img">
+      <div className="wrapper-project">
+        <div className="title-project">{title}</div>
+        <div className="img-project">
           <img src={require(`../../../images/${image}`)} alt="" />
         </div>
-        <div className="project-subtitle">{subTitle}</div>
-        <div className="project-btn">
-          <div className="view-btn">
-            <VisibilityIcon className="icon" />
+        <div className="subtitle-project">{subTitle}</div>
+        <div className="btn-project">
+          <div className="view-btn-project">
+            <VisibilityIcon className="icon-project" />
           </div>
-          <div className="view-github">
-            <GitHubIcon className="icon" />
+          <div className="view-github-project">
+            <GitHubIcon className="icon-project" />
           </div>
         </div>
       </div>

@@ -7,15 +7,16 @@
   top: 0;
   left: 0;
   bottom: 0;
-  .wrapper {
+  width: 20%;
+  .wrapper-nav {
     display: flex;
     flex-direction: column;
-    .top {
+    .top-nav {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin-top: 40px;
-      .avatar {
+      .avatar-nav {
         img {
           width: 150px;
           height: 150px;
@@ -23,22 +24,22 @@
           border: 10px solid rgb(102, 102, 102);
         }
       }
-      .name {
+      .name-nav {
         margin-top: 20px;
         text-align: center;
         font-size: 24px;
         font-weight: 500;
         color: white;
       }
-      .social-icons {
+      .social-icons-nav {
         margin-top: 20px;
         // width: 100%;
-        .icons {
+        .icons-nav {
           list-style: none;
           display: flex;
           justify-content: space-between;
           li {
-            .icon {
+            .icon-nav {
               width: 36px;
               height: 36px;
               background-color: #212431;
@@ -57,12 +58,12 @@
         }
       }
     }
-    .bottom {
+    .bottom-nav {
       margin-top: 40px;
       display: flex;
       justify-content: center;
 
-      .navlinks {
+      .navlinks-nav {
         align-items: center;
         list-style: none;
         li {
@@ -76,7 +77,7 @@
             color: #fff;
           }
 
-          .icon {
+          .icon-nav {
             margin-right: 10px;
             :hover {
               color: #149ddd;

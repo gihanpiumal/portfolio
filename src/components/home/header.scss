@@ -1,0 +1,22 @@
+.header{
+    .wrapper-header{
+        .title-header{
+            width: 80%;
+            // height: 100vh;
+            height: 700px;
+            background: url("../../images/hero-bg.jpg") top center;
+            background-size: cover;
+            position: fixed;
+            z-index: -66;
+
+            .topic-header{
+                margin-top: 100px;
+                margin-left: 200px;
+                font-size: 72px;
+                color: #fff;
+                font-weight: bold;
+            }
+
+        }
+    }
+}
