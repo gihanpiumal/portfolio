@@ -1,0 +1,117 @@
+.about {
+  .wrapper {
+    margin-left: 40px;
+    margin-top: 100px;
+    margin-right: 40px;
+    .top {
+      .title-about {
+        font-size: 28px;
+        font-weight: bold;
+        color: #31087b;
+      }
+      .description {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+    .middle {
+      display: flex;
+      //   flex-direction: column;
+      justify-content: center;
+      //   align-items: center;
+      .dp {
+        margin-top: 20px;
+        img {
+          width: 400px;
+          height: 400px;
+        }
+      }
+      .middle-data {
+        margin-left: 20px;
+        .dp-title {
+          margin-top: 10px;
+          font-size: 22px;
+          font-weight: 700;
+          color: #31087b;
+        }
+        .dp-description {
+          margin-top: 10px;
+          font-size: 16px;
+          font-weight: 400;
+        }
+        .bio {
+          display: flex;
+          margin-top: 40px;
+          .left {
+            margin-left: 50px;
+            margin-right: 100px;
+            li {
+              display: flex;
+              align-items: center;
+              margin-bottom: 18px;
+
+              .topic {
+                font-weight: bold;
+                margin-right: 5px;
+              }
+            }
+          }
+          .right {
+            li {
+              display: flex;
+              align-items: center;
+              margin-bottom: 18px;
+
+              .topic {
+                font-weight: bold;
+                margin-right: 5px;
+              }
+            }
+          }
+        }
+        .bottom-description {
+          margin-top: 30px;
+          font-size: 16px;
+        }
+      }
+    }
+    .bottom {
+      margin-top: 20px;
+      .bottom-title {
+        margin-top: 10px;
+        font-size: 22px;
+        font-weight: 700;
+        color: #31087b;
+      }
+
+      .bottom-des {
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: 400;
+      }
+      .skilles-list {
+        margin-top: 20px;
+        display: flex;
+        margin-left: 100px;
+        li{
+          font-size: 20px;
+          font-weight: bold;
+          color: #31087B;
+        }
+        .left-skils {
+          flex: 1;
+          list-style: none;
+        }
+        .middle-skils {
+          list-style: none;
+          flex: 1;
+        }
+        .right-skils {
+          list-style: none;
+          flex: 1;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+export * from "./navbar"
+export * from "./container"
+export * from "./about"
+export * from "./contact"
+export * from "./home"
+export * from "./portfolio"
+export * from "./technologies"
