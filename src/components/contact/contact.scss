@@ -65,9 +65,18 @@
         .contact-top {
           display: flex;
           width: 100%;
-          .text-input {
-            margin-bottom: 10px;
-            margin-right: 10px;
+          .form-input {
+            display: flex;
+            flex-direction: column;
+
+            .text-input {
+              margin-bottom: 10px;
+              margin-right: 10px;
+            }
+            .alert-danger{
+              color: red;
+              font-size: 12px;
+            }
           }
         }
         .contact-middle {
@@ -75,11 +84,22 @@
           flex-direction: column;
           justify-content: center;
           width: 100%;
-          .text-input {
-            margin-bottom: 10px;
+          .form-input-middle{
+            display: flex;
+            flex-direction: column;
+            .text-input {
+              margin-bottom: 10px;
+            }
+            
+            .alert-danger{
+              color: red;
+              font-size: 12px;
+            }
+
           }
         }
         .contact-bottom {
+          margin-top: 20px;
           .send-btn {
           }
         }

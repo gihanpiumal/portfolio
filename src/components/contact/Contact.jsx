@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState , useRef} from "react";
 import Joi from "joi";
+import emailjs from "@emailjs/browser";
 
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import EmailIcon from "@mui/icons-material/Email";
@@ -18,65 +19,26 @@ const Contact = () => {
   });
 
   const [errors, setErrors] = useState([]);
+  const forms = useRef();
 
   const schema = Joi.object({
     name: Joi.string().required().label("Name"),
-    email: Joi.string().required().label("Email"),
+    email: Joi.string()
+      .regex(/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-z]+)$/)
+      .messages({ "string.pattern.base": `"Please provide valide email` })
+      .required(),
     subject: Joi.string().required().label("Subject"),
     message: Joi.string().required().label("Message"),
   });
-
-  const validateForm = (event) => {
-    event.preventDefault();
-    const result = Joi.validate(form, schema, { abortEarly: false });
-    console.log(result);
-    const { error } = result;
-    if (!error) {
-      return null;
-    } else {
-      const errorData = {};
-      for (let item of error.details) {
-        const name = item.path[0];
-        const message = item.message;
-        errorData[name] = message;
-      }
-      console.log(errors);
-      setErrors(errorData);
-      return errorData;
-    }
-  };
-
-  const validateProperty = (name, value) => {
-    const option = {
-      abortEarly: false,
-    };
-
-    form[name] = value;
-    const { error } = schema.validate(form, option);
-
-    errors[name] = null;
-    
-    const errorData = {};
-    if (error) {
-      for (let item of error.details) {
-        const name = item.path[0];
-        const message = item.message;
-        errorData[name] = message;
-      }
-    }
-    console.log(errors);
-    setErrors(errorData);
-    return errorData;
-  };
 
   const validate = () => {
     const option = {
       abortEarly: false,
     };
+
     const { error } = schema.validate(form, option);
 
     if (!error) return null;
-
     const errorData = {};
     for (let item of error.details) {
       const name = item.path[0];
@@ -89,6 +51,27 @@ const Contact = () => {
     return errorData;
   };
 
+  const validateProperty = (name, value) => {
+    const option = {
+      abortEarly: false,
+    };
+
+    // const { form, errors } = this.state;
+    form[name] = value.currentTarget.value;
+    const { error } = schema.validate(form, option);
+
+    const errorData = {};
+    setErrors({ ...errors, [name]: null });
+    if (error) {
+      for (let item of error.details) {
+        if (item.path[0] === name) {
+          console.log(item.path[0]);
+          setErrors({ ...errors, [name]: item.message });
+        }
+      }
+    }
+  };
+
   const clearState = () => {
     setForm({
       name: "",
@@ -99,10 +82,23 @@ const Contact = () => {
   };
 
   const submit = () => {
-    if (validate) {
-      console.log("NN");
+    if (validate()) {
+      return;
     }
-    console.log(form);
+    emailjs
+      .sendForm(
+        "service_ptdlzd9",
+        "template_201e3gb",
+        forms.current,
+        "zm8x49rrTUyvXyNUc"
+      )
+      .then(
+        (result) => {
+          clearState()
+        },
+        (error) => {
+        }
+      );
   };
 
   return (
@@ -157,72 +153,84 @@ const Contact = () => {
               </li>
             </ul>
           </div>
-          <div className="contact-form">
+          <form className="contact-form" ref={forms} >
             <div className="contact-top">
-              <TextField
-                id="outlined-basic"
-                label="Your Name"
-                variant="outlined"
-                value={form.name}
-                name={"name"}
-                onChange={(e) => {
-                  validateProperty("name",e)
-                }}
-                className="text-input"
-              />
-              {errors.name && (
-                <div className="alert alert-danger">{errors.name}</div>
-              )}
-              <TextField
-                id="outlined-basic"
-                label="Your Email"
-                variant="outlined"
-                name={"email"}
-                // onChange={handleSave}
-                value={form.email}
-                className="text-input"
-              />
-              {errors.email && (
-                <div className="alert alert-danger">{errors.email}</div>
-              )}
+              <div className="form-input">
+                <TextField
+                  id="outlined-basic"
+                  label="Your Name"
+                  variant="outlined"
+                  value={form.name}
+                  name={"name"}
+                  onChange={(e) => {
+                    validateProperty("name", e);
+                  }}
+                  className="text-input"
+                />
+                {errors.name && (
+                  <div className="alert-danger">
+                    <p>{errors.name}</p>
+                  </div>
+                )}
+              </div>
+              <div className="form-input">
+                <TextField
+                  id="outlined-basic"
+                  label="Your Email"
+                  variant="outlined"
+                  value={form.email}
+                  name={"email"}
+                  onChange={(e) => {
+                    validateProperty("email", e);
+                  }}
+                  className="text-input"
+                />
+                {errors.email && (
+                  <div className="alert-danger">{errors.email}</div>
+                )}
+              </div>
             </div>
             <div className="contact-middle">
-              <TextField
-                id="outlined-basic"
-                label="Subject"
-                variant="outlined"
-                name={"subject"}
-                // onChange={handleSave}
-                value={form.subject}
-                className="text-input"
-              />
-              {errors.subject && (
-                <div className="alert alert-danger">{errors.subject}</div>
-              )}
-              <TextField
-                id="outlined-multiline-static"
-                label="Message"
-                className="text-input"
-                name={"message"}
-                // onChange={handleSave}
-                value={form.message}
-                multiline
-                rows={4}
-              />
-              {errors.message && (
-                <div className="alert alert-danger">{errors.message}</div>
-              )}
+              <div className="form-input-middle">
+                <TextField
+                  id="outlined-basic"
+                  label="Subject"
+                  variant="outlined"
+                  name={"subject"}
+                  onChange={(e) => {
+                    validateProperty("subject", e);
+                  }}
+                  value={form.subject}
+                  className="text-input"
+                />
+                {errors.subject && (
+                  <div className="alert-danger">{errors.subject}</div>
+                )}
+              </div>
+              <div className="form-input-middle">
+                <TextField
+                  id="outlined-multiline-static"
+                  label="Message"
+                  className="text-input"
+                  name={"message"}
+                  onChange={(e) => {
+                    validateProperty("message", e);
+                  }}
+                  value={form.message}
+                  multiline
+                  rows={4}
+                />
+                {errors.message && (
+                  <div className="alert-danger">{errors.message}</div>
+                )}
+              </div>
             </div>
             <div className="contact-bottom">
-              <Button
-                variant="contained"
-                className="send-btn"
-                // onClick={validateForm}
-              >
+              <Button variant="contained" className="send-btn" onClick={submit}>
                 Send Message
               </Button>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>
