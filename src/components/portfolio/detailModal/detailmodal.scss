@@ -1,0 +1,30 @@
+.detail-modal {
+  .modal-wrapper {
+    .modal-title {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .modal-subtitle {
+        text-align: center;
+        font-size: 17px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    .modal-image {
+        align-items: center;
+        margin-bottom: 10px;
+      img {
+        width: 100%;
+        height: 250px;
+      }
+    }
+    .modal-description {
+        font-size: 16px;
+        
+    }
+    .modal-gitlink {
+    }
+  }
+}

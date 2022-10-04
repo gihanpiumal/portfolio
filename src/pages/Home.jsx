@@ -15,6 +15,8 @@ const Home = () => {
     document.addEventListener("mousedown", (event) => {
       if (!navRef.current.contains(event.target)) {
         setNavigationExpand("");
+      } else {
+        setNavigationExpand("show");
       }
     });
   });

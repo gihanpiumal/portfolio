@@ -12,31 +12,43 @@ const Portfoio = () => {
       title: "Ptoject 1",
       img: "p1.png",
       subTitle: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      description:"description 1",
+      gitLink: "https://github.com/gihanpiumal/frequency-sound-genarator"
     },
     {
-      title: "Ptoject 1",
+      title: "Ptoject 2",
       img: "p1.png",
       subTitle: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      description:"description 1",
+      gitLink: "#"
     },
     {
-      title: "Ptoject 1",
+      title: "Ptoject 3",
       img: "p1.png",
       subTitle: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      description:"description 1",
+      gitLink: "#"
     },
     {
-      title: "Ptoject 1",
+      title: "Ptoject 4",
       img: "p1.png",
       subTitle: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      description:"description 1",
+      gitLink: "#"
     },
     {
-      title: "Ptoject 1",
+      title: "Ptoject 5",
       img: "p1.png",
       subTitle: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      description:"description 1",
+      gitLink: "#"
     },
     {
-      title: "Ptoject 1",
+      title: "Ptoject 6",
       img: "p1.png",
       subTitle: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      description:"description 1",
+      gitLink: "#"
     },
   ];
   return (
@@ -56,6 +68,8 @@ const Portfoio = () => {
                   title={val.title}
                   image={val.img}
                   subTitle={val.subTitle}
+                  gitLink={val.gitLink}
+                  description={val.description}
                 />
               </Grid>
             ))}
