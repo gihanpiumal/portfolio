@@ -25,6 +25,7 @@
     }
     .img-project {
       margin-top: 10px;
+      cursor: pointer;
       img {
         width: 300px;
         height: 170px;
@@ -35,9 +36,10 @@
       color: rgb(0, 0, 0);
       font-style: 15px;
       font-weight: 100;
+      margin-top: 10px;
     }
     .btn-project {
-      display: flex;
+      // display: flex;
       .view-btn-project {
         margin-right: 250px;
         .icon-project {
@@ -47,6 +49,7 @@
       }
       .view-github-project {
         .icon-project {
+          margin-top: 10px;
           color: rgb(0, 0, 0);
           cursor: pointer;
           font-size: 28px;

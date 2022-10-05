@@ -50,13 +50,13 @@ const Project = ({ title, image, subTitle, description, gitLink }) => {
       </div>
       <div className="wrapper-project" data-aos="flip-right">
         <div className="title-project">{title}</div>
-        <div className="img-project">
+        <div className="img-project" onClick={showModal}>
           <img src={require(`../../../images/${image}`)} alt="" />
         </div>
         <div className="subtitle-project">{subTitle}</div>
         <div className="btn-project">
-          <div className="view-btn-project" onClick={showModal}>
-            <VisibilityIcon className="icon-project" />
+          <div className="view-btn-project" >
+            {/* <VisibilityIcon className="icon-project" /> */}
           </div>
           <div className="view-github-project">
             <a href={gitLink} target="_blank">
