@@ -10,7 +10,7 @@ const DetailModal = ({ title, image, subTitle, description, gitLink }) => {
         <div className="modal-title">{title}</div>
         <div className="modal-subtitle">{subTitle}</div>
         <div className="modal-image">
-          <img src={require(`../../../images/${image}`)} alt="" />
+          {/* <img src={require(`../../../images/${image}`)} alt="" /> */}
         </div>
         <div className="modal-description">{description}</div>
         <div className="modal-gitlink">

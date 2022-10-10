@@ -9,46 +9,11 @@ import "./portfolio.scss";
 const Portfoio = () => {
   const temp_project = [
     {
-      title: "Ptoject 1",
-      img: "p1.png",
-      subTitle: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      title: "Memory Blog App",
+      img: "https://www.youtube.com/embed/fH23SP7tZFo",
+      subTitle: "Save my memories to my memoty blog",
       description:"description 1",
-      gitLink: "https://github.com/gihanpiumal/frequency-sound-genarator"
-    },
-    {
-      title: "Ptoject 2",
-      img: "p1.png",
-      subTitle: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-      description:"description 1",
-      gitLink: "#"
-    },
-    {
-      title: "Ptoject 3",
-      img: "p1.png",
-      subTitle: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-      description:"description 1",
-      gitLink: "#"
-    },
-    {
-      title: "Ptoject 4",
-      img: "p1.png",
-      subTitle: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-      description:"description 1",
-      gitLink: "#"
-    },
-    {
-      title: "Ptoject 5",
-      img: "p1.png",
-      subTitle: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-      description:"description 1",
-      gitLink: "#"
-    },
-    {
-      title: "Ptoject 6",
-      img: "p1.png",
-      subTitle: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-      description:"description 1",
-      gitLink: "#"
+      gitLink: "https://github.com/gihanpiumal/memory-application-v1"
     },
   ];
   return (

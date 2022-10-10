@@ -41,7 +41,7 @@ const Project = ({ title, image, subTitle, description, gitLink }) => {
         >
           <DetailModal
             title={title}
-            image={image}
+            // image={image}
             subTitle={subTitle}
             description={description}
             gitLink={gitLink}
@@ -50,10 +50,10 @@ const Project = ({ title, image, subTitle, description, gitLink }) => {
       </div>
       <div className="wrapper-project" data-aos="flip-right">
         <div className="title-project">{title}</div>
-        <div className="img-project" onClick={showModal}>
+        <div className="img-project" >
           {/* <img src={require(`../../../images/${image}`)} alt="" /> */}
           <iframe
-            src="https://www.youtube.com/embed/fH23SP7tZFo"
+            src={image}
             title="YouTube video"
             allowFullScreen
           ></iframe>
@@ -61,7 +61,7 @@ const Project = ({ title, image, subTitle, description, gitLink }) => {
         <div className="subtitle-project">{subTitle}</div>
         <div className="btn-project">
           <div className="view-btn-project">
-            {/* <VisibilityIcon className="icon-project" /> */}
+            <VisibilityIcon className="icon-project" onClick={showModal} />
           </div>
           <div className="view-github-project">
             <a href={gitLink} target="_blank">
