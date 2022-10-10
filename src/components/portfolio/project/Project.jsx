@@ -51,11 +51,16 @@ const Project = ({ title, image, subTitle, description, gitLink }) => {
       <div className="wrapper-project" data-aos="flip-right">
         <div className="title-project">{title}</div>
         <div className="img-project" onClick={showModal}>
-          <img src={require(`../../../images/${image}`)} alt="" />
+          {/* <img src={require(`../../../images/${image}`)} alt="" /> */}
+          <iframe
+            src="https://www.youtube.com/embed/fH23SP7tZFo"
+            title="YouTube video"
+            allowFullScreen
+          ></iframe>
         </div>
         <div className="subtitle-project">{subTitle}</div>
         <div className="btn-project">
-          <div className="view-btn-project" >
+          <div className="view-btn-project">
             {/* <VisibilityIcon className="icon-project" /> */}
           </div>
           <div className="view-github-project">
