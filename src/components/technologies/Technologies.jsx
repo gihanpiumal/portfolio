@@ -10,19 +10,15 @@ const Technologies = () => {
   const temp_technologies = [
     {
       title: "React Js",
-      desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum facere consectetur atque, dolorum quae voluptatum voluptate iure iste consequuntur animi tempore! Voluptatibus similique exercitationem earum iste cum a, itaque deleniti.",
+      desc: "For front end development i use React. Mainly i use functional components to my developments. Also i have good experience with Redux as well. Most of the time i use materiial ui and ant designer components to my developments.",
     },
     {
-      title: "React Js",
-      desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum facere consectetur atque, dolorum quae voluptatum voluptate iure iste consequuntur animi tempore! Voluptatibus similique exercitationem earum iste cum a, itaque deleniti.",
+      title: "Node Js",
+      desc: "Node js i use for develop my backend. For this i use Express js . Making new logics with fuctions, customize the backend code to give fast and expected output is my main target.",
     },
     {
-      title: "React Js",
-      desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum facere consectetur atque, dolorum quae voluptatum voluptate iure iste consequuntur animi tempore! Voluptatibus similique exercitationem earum iste cum a, itaque deleniti.",
-    },
-    {
-      title: "React Js",
-      desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum facere consectetur atque, dolorum quae voluptatum voluptate iure iste consequuntur animi tempore! Voluptatibus similique exercitationem earum iste cum a, itaque deleniti.",
+      title: "Mongo DB",
+      desc: "Mongo Db i used for as my database. It was a non relational database and very easy to use for node applications. Also it has lot of functionalities to fast development.",
     },
   ];
   return (
@@ -30,10 +26,8 @@ const Technologies = () => {
       <div className="wrapper-technologiies">
         <div className="title-technologies">Technologies</div>
         <div className="description-technologies">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod nobis
-          fugit totam nesciunt sint enim dignissimos molestiae magnam qui
-          aliquam, eos quas corrupti voluptatem rerum repudiandae quia. Alias,
-          eius ullam!
+          Every day i am updating to new technologies. I want to give the modern
+          and latest user experience to my client with my knowledge.
         </div>
         <div className="card-technologies">
           <Grid
@@ -43,7 +37,13 @@ const Technologies = () => {
             columns={{ xs: 4, sm: 8, md: 12 }}
           >
             {temp_technologies.map((val, index) => (
-              <Grid className="grids-technologiies" xs={4} sm={4} md={4} key={index}>
+              <Grid
+                className="grids-technologiies"
+                xs={4}
+                sm={4}
+                md={4}
+                key={index}
+              >
                 <Tech title={val.title} descripttion={val.desc} />
               </Grid>
             ))}

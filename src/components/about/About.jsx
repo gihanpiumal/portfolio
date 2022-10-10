@@ -14,13 +14,14 @@ const About = () => {
         <div className="top-about">
           <div className="title-about">About</div>
           <div className="description-about">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In
-            architecto excepturi neque temporibus iure ab eos exercitationem
-            explicabo, vero asperiores ad facilis inventore eum? Perferendis
-            similique architecto nobis facilis! Dolore. Lorem ipsum dolor, sit
-            amet consectetur adipisicing elit. Consectetur earum sint molestiae!
-            Fuga placeat commodi sit labore quis neque, fugit quam quaerat ipsam
-            aliquid voluptas impedit vero quos nulla quae?
+            I am Gihan Piumal. I am a Full Stack web developer with significant
+            front and back end experience. I keep my coding workflow organized
+            and well documented to make scaling up the project easy and
+            painless.After completing my Bachelor of Technology in Mechatronics
+            at the Uva Wellassa University of Sri Lanka, in 2022, I desided to
+            move forward as a web developer. So i join to Enterprise Business
+            Inteligence as a intern developer. In there , i got lot of knowledge
+            and experience with React, Node, Express, and MongoDB.
           </div>
         </div>
         <div className="middle-about">
@@ -30,10 +31,7 @@ const About = () => {
           <div className="middle-data-about" data-aos="fade-left">
             <div className="dp-title-about">Full Stack Web Developer</div>
             <div className="dp-description-about">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-              ullam itaque soluta impedit explicabo, mollitia aliquam
-              repellendus quod excepturi eos esse, modi sunt voluptatum
-              pariatur. Quod impedit officiis suscipit mollitia.
+              This is my personal informations.
             </div>
             <div className="bio-about">
               <ul className="left-about">
@@ -43,7 +41,9 @@ const About = () => {
                 </li>
                 <li>
                   <div className="topic">Website :</div>
-                  <div className="value">www.abc.com</div>
+                  <div className="value">
+                    https://gihanpiumal.github.io/portfolio/
+                  </div>
                 </li>
                 <li>
                   <div className="topic">Phone :</div>
@@ -65,7 +65,7 @@ const About = () => {
                 </li>
                 <li>
                   <div className="topic">Email :</div>
-                  <div className="value">gihan@gmail.com</div>
+                  <div className="value">gihanpiumal12345@gmail.com</div>
                 </li>
                 <li>
                   <div className="topic">Freelance :</div>
@@ -74,43 +74,52 @@ const About = () => {
               </ul>
             </div>
             <div className="bottom-description-about">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
-              ab ipsam maxime aliquam hic suscipit, at voluptatem ipsa
-              distinctio commodi neque accusamus, quia, error aperiam amet
-              facilis. Vitae, dolores nobis! Lorem ipsum dolor sit, amet
-              consectetur adipisicing elit. Quidem adipisci magnam ea eius
-              facere dicta a, nesciunt corporis commodi natus, quas animi itaque
-              laudantium impedit reiciendis culpa repudiandae eligendi
-              similique.
+              My digree is related to Mechatronics, But i am very interesting
+              about web development. So that is why i choose this development
+              side.
             </div>
           </div>
         </div>
         <div className="bottom-about">
           <div className="bottom-title-about">Skills</div>
           <div className="bottom-des-about">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-            voluptatem eveniet exercitationem iste quis ducimus suscipit iure.
-            Corporis quibusdam magnam iste laboriosam dolore a. Totam accusamus
-            iure blanditiis nihil laboriosam?
+            Now i have lot of knowledge about full stack web development. For
+            designing web page i have good experience about Figma , Adobe XD and
+            Adobe illustrator. For front end development, mainly i use React js.
+            For backend development i have knowledge about Node js, Php ,
+            laraval , Flask and Django. Also i have good knowledge about image
+            proccessing and Machine learning. So i can connect web app with
+            Machine learning as well. Also another favorite area of mine is
+            blockchain development. As a developer i am very interesting to
+            develop D.app with web 3.0 . Also i know about solidity so i can
+            make smart contract as well. Also i know about mobile app
+            development as well. Using Dart and Flutter i can make mobile
+            applications. You can see all of my skills in project section.
           </div>
           <div className="skilles-list-about">
-            <ul className="left-skils-about"  data-aos="fade-right">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JAVASCRIPT</li>
-              <li>PHP</li>
+            <ul className="left-skils-about" data-aos="fade-right">
+              <li>Html</li>
+              <li>Css</li>
+              <li>Javascript</li>
+              <li>Php</li>
+              <li>Dart</li>
+              <li>Image Proccessiing</li>
             </ul>
-            <ul className="middle-skils-about"   data-aos="fade-up">
-              <li>PHTHON</li>
-              <li>REACTJS</li>
-              <li>NODEJS</li>
-              <li>MONGODB</li>
+            <ul className="middle-skils-about" data-aos="fade-up">
+              <li>Python</li>
+              <li>Flask</li>
+              <li>Django</li>
+              <li>Mysql</li>
+              <li>Solidity</li>
+              <li>Machine Learning</li>
             </ul>
-            <ul className="right-skils-about"   data-aos="fade-left">
-              <li>PHTHON</li>
-              <li>REACTJS</li>
-              <li>NODEJS</li>
-              <li>MONGODB</li>
+            <ul className="right-skils-about" data-aos="fade-left">
+              <li>React Js</li>
+              <li>Node Js</li>
+              <li>Express Js</li>
+              <li>Mongo DB</li>
+              <li>Flutter</li>
+              <li>Deep Learning</li>
             </ul>
           </div>
         </div>

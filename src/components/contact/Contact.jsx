@@ -106,10 +106,7 @@ const Contact = () => {
       <div className="wrapper-contact">
         <div className="title-contact">Contact</div>
         <div className="description-contact">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda
-          quod nesciunt id nam sapiente amet dolorem corrupti ab reiciendis
-          nobis adipisci aliquam nemo cumque distinctio ut temporibus quam,
-          itaque voluptatem.
+          Thank you very much for visit my portfolio and if you have any question pleasecontact me.
         </div>
         <div className="data-contact">
           <div className="details-contact">
