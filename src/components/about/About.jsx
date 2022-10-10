@@ -42,7 +42,8 @@ const About = () => {
                 <li>
                   <div className="topic">Website :</div>
                   <div className="value">
-                    https://gihanpiumal.github.io/portfolio/
+                    <a href="https://gihanpiumal.github.io/portfolio/">my website</a>
+                    
                   </div>
                 </li>
                 <li>
