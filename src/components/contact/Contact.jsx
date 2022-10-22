@@ -1,4 +1,4 @@
-import React, { useState , useRef} from "react";
+import React, { useState, useRef } from "react";
 import Joi from "joi";
 import emailjs from "@emailjs/browser";
 
@@ -94,10 +94,9 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          clearState()
+          clearState();
         },
-        (error) => {
-        }
+        (error) => {}
       );
   };
 
@@ -106,7 +105,8 @@ const Contact = () => {
       <div className="wrapper-contact">
         <div className="title-contact">Contact</div>
         <div className="description-contact">
-          Thank you very much for visit my portfolio and if you have any question pleasecontact me.
+          Thank you very much for visit my portfolio and if you have any
+          question, please contact me.
         </div>
         <div className="data-contact">
           <div className="details-contact">
@@ -150,7 +150,7 @@ const Contact = () => {
               </li>
             </ul>
           </div>
-          <form className="contact-form" ref={forms} >
+          <form className="contact-form" ref={forms}>
             <div className="contact-top">
               <div className="form-input">
                 <TextField

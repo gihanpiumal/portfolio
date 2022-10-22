@@ -14,14 +14,15 @@ const About = () => {
         <div className="top-about">
           <div className="title-about">About</div>
           <div className="description-about">
-            I am Gihan Piumal. I am a Full Stack web developer with significant
-            front and back end experience. I keep my coding workflow organized
-            and well documented to make scaling up the project easy and
-            painless.After completing my Bachelor of Technology in Mechatronics
-            at the Uva Wellassa University of Sri Lanka, in 2022, I desided to
-            move forward as a web developer. So i join to Enterprise Business
-            Inteligence as a intern developer. In there , i got lot of knowledge
-            and experience with React, Node, Express, and MongoDB.
+            I am Gihan Piumal Alwis. I am a Full Stack web developer with
+            significant experience on the front and back ends. To make scaling
+            up the project easy and painless, I keep my coding workflow
+            organized and well documented. After completing my degree in
+            Bachelor of Technology in Mechatronics at the Uva Wellassa
+            University of Sri Lanka, in 2022, I decided to pursue a career as a
+            web developer. So, I joined to Enterprise Business Intelligence as
+            an intern developer. I learned and gained experience with React,
+            Node, Express, and MongoDB while working there.
           </div>
         </div>
         <div className="middle-about">
@@ -42,8 +43,9 @@ const About = () => {
                 <li>
                   <div className="topic">Website :</div>
                   <div className="value">
-                    <a href="https://gihanpiumal.github.io/portfolio/">my website</a>
-                    
+                    <a href="https://gihanpiumal.github.io/portfolio/">
+                      my website
+                    </a>
                   </div>
                 </li>
                 <li>
@@ -62,7 +64,7 @@ const About = () => {
                 </li>
                 <li>
                   <div className="topic">Digree :</div>
-                  <div className="value">Btec in Mechatronics</div>
+                  <div className="value">B. tech in Mechatronics</div>
                 </li>
                 <li>
                   <div className="topic">Email :</div>
@@ -75,27 +77,27 @@ const About = () => {
               </ul>
             </div>
             <div className="bottom-description-about">
-              My digree is related to Mechatronics, But i am very interesting
-              about web development. So that is why i choose this development
-              side.
+              My degree is related to Mechatronics; however, I am highly
+              interested in web development. That is why I chose to work on the
+              web development side
             </div>
           </div>
         </div>
         <div className="bottom-about">
           <div className="bottom-title-about">Skills</div>
           <div className="bottom-des-about">
-            Now i have lot of knowledge about full stack web development. For
-            designing web page i have good experience about Figma , Adobe XD and
-            Adobe illustrator. For front end development, mainly i use React js.
-            For backend development i have knowledge about Node js, Php ,
-            laraval , Flask and Django. Also i have good knowledge about image
-            proccessing and Machine learning. So i can connect web app with
-            Machine learning as well. Also another favorite area of mine is
-            blockchain development. As a developer i am very interesting to
-            develop D.app with web 3.0 . Also i know about solidity so i can
-            make smart contract as well. Also i know about mobile app
-            development as well. Using Dart and Flutter i can make mobile
-            applications. You can see all of my skills in project section.
+            Now I know a lot about full stack web development. I have extensive
+            experience with Figma, Adobe XD, and Adobe Illustrator for web
+            design. I primarily use React js for front-end development. I am
+            familiar with Node.js, PHP, Laravel, and Flask for back-end
+            development. In addition, I have good knowledge about image
+            processing and Machine learning. So, I can connect web app with
+            Machine learning as well. Another area of passion of mine is
+            blockchain development. As a developer, I am particularly interested
+            in developing D.apps using web 3.0. Also, I know about solidity, so
+            I can create smart contracts. I also have experience with mobile app
+            development. I can create mobile applications with Dart and Flutter.
+            All of my skills are listed in the project section.
           </div>
           <div className="skilles-list-about">
             <ul className="left-skils-about" data-aos="fade-right">
